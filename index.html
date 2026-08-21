@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jawed Habib Hair & Beauty — Rajendra Nagar</title>
+<meta name="description" content="A premium salon website concept for Jawed Habib Hair & Beauty, Rajendra Nagar, Hyderabad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#171311;--muted:#746b66;--cream:#f8f3ed;--sand:#e8d8c8;--gold:#b88954;--dark:#211b18;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--dark);color:#eee8e2;text-align:center;padding:9px;font-size:13px;letter-spacing:.04em}
+nav{position:absolute;z-index:5;top:38px;left:0;width:100%;color:#fff}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:"Playfair Display";font-size:24px;font-weight:600;letter-spacing:.02em}
+.logo span{display:block;font-family:"DM Sans";font-size:9px;letter-spacing:.28em;text-transform:uppercase;opacity:.75}
+.navlinks{display:flex;gap:30px;font-size:14px}
+.navlinks a:hover{color:#e7c9a6}
+.nav-cta{border:1px solid #ffffff80;padding:10px 18px;border-radius:30px}
+.hero{min-height:760px;display:grid;place-items:center;position:relative;color:white;overflow:hidden;background:linear-gradient(90deg,rgba(20,14,11,.84),rgba(20,14,11,.35)),url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=2000&q=85") center/cover}
+.hero-content{padding-top:95px;max-width:760px;margin-left:0}
+.eyebrow{text-transform:uppercase;letter-spacing:.25em;font-size:12px;color:#e7c9a6;margin-bottom:18px}
+h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.08}
+h1{font-size:clamp(52px,7vw,92px);max-width:850px}
+.hero p{max-width:610px;margin:25px 0 32px;font-size:18px;color:#eee7e1}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;border-radius:30px;font-weight:700;font-size:14px;transition:.2s}
+.btn-gold{background:#c49663;color:#1b1511}.btn-gold:hover{transform:translateY(-2px);background:#d1aa7c}
+.btn-light{border:1px solid #ffffff70;color:#fff}.btn-light:hover{background:#ffffff15}
+
+.hero-grid{width:min(1160px,92%);margin:auto;display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:center;padding-top:70px}
+.hero-panel{width:100%;max-width:410px;justify-self:end}
+.hero-panel-image{height:500px;border-radius:12px 12px 180px 180px;background:linear-gradient(180deg,transparent 45%,rgba(20,14,11,.4)),url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85") center/cover;box-shadow:0 30px 70px rgba(0,0,0,.25)}
+.hero-panel-info{background:#fff;color:var(--ink);margin:-55px 24px 0;padding:20px 24px;position:relative;z-index:2;border-radius:8px;box-shadow:0 15px 35px rgba(0,0,0,.18)}
+.hero-panel-info span{display:block;color:var(--gold);font-size:10px;letter-spacing:.2em;font-weight:700}
+.hero-panel-info strong{display:block;font-family:"Playfair Display";font-size:24px;margin:2px 0}
+.hero-panel-info small{color:var(--muted)}
+.hero-note{position:absolute;bottom:28px;left:4%;font-size:12px;opacity:.7}
+.section{padding:100px 0}
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.section-label{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700}
+h2{font-size:clamp(38px,5vw,58px);margin:13px 0 20px}
+.lead{font-size:17px;color:var(--muted);max-width:600px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:35px}
+.stat{background:#fff;padding:22px;border:1px solid #eadfd5}
+.stat strong{display:block;font-family:"Playfair Display";font-size:25px}.stat span{font-size:12px;color:var(--muted)}
+.intro-img{height:570px;background:url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85") center/cover;border-radius:180px 180px 12px 12px}
+.services{background:#211b18;color:#fff}
+.services .section-label{color:#d7ae7d}.services .lead{color:#bfb5ad}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px}
+.card{padding:34px;background:#2b2420;border:1px solid #ffffff10;min-height:225px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#c49663}
+.card .num{color:#c49663;font-size:12px;letter-spacing:.15em}
+.card h3{font-size:29px;margin:28px 0 10px}.card p{color:#bfb5ad;font-size:14px}
+.gallery-head{display:flex;justify-content:space-between;gap:30px;align-items:end}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:270px 270px;gap:14px;margin-top:40px}
+.gallery div{border-radius:10px;background-size:cover;background-position:center}
+.g1{grid-row:span 2;background-image:url("https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=85")}
+.g2{background-image:url("https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85")}
+.g3{background-image:url("https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=85")}
+.g4{background-image:url("https://images.unsplash.com/photo-1527799820374-dcf8b7f5f5aa?auto=format&fit=crop&w=800&q=85")}
+.g5{background-image:url("https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=85")}
+.quote{background:#e9ddcf;text-align:center;padding:95px 20px}.quote p{font-family:"Playfair Display";font-size:clamp(27px,4vw,45px);max-width:850px;margin:auto}.quote small{display:block;margin-top:20px;color:var(--muted)}
+.visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:stretch}
+.visit-card{background:#fff;padding:45px}.visit-card h2{font-size:46px}.details{margin:28px 0}.detail{padding:13px 0;border-bottom:1px solid #eee2d8;font-size:14px}.detail strong{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);margin-bottom:3px}
+.map{min-height:470px;background:linear-gradient(135deg,#d8c8b7,#f0e7de);display:grid;place-items:center;overflow:hidden}
+.map-inner{text-align:center;padding:30px}.pin{font-size:45px}.map-inner p{color:#665b54;margin:8px 0 20px}
+footer{background:#171311;color:#c9c0b9;padding:40px 0}.footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:center}.footer-logo{font-family:"Playfair Display";font-size:24px;color:#fff}
+.mobile-menu{display:none}
+@media(max-width:1000px){
+ .hero-grid{grid-template-columns:1fr 340px;gap:35px}
+ .hero-panel-image{height:430px}
+ .navlinks{gap:18px}
+}
+@media(max-width:800px){
+ .topbar{font-size:11px;padding:8px 12px}
+ nav{top:34px}
+ .navlinks{display:none;position:absolute;top:55px;left:4%;right:4%;background:rgba(33,27,24,.97);padding:18px;border-radius:12px;flex-direction:column;gap:16px;box-shadow:0 15px 30px rgba(0,0,0,.2)}
+ .navlinks a{font-size:15px}
+ .nav-cta{display:none}
+ .mobile-menu{display:block;border:1px solid #ffffff70;border-radius:25px;padding:9px 14px;background:transparent;color:#fff;font:inherit}
+ .hero{min-height:auto;padding:105px 0 80px}
+ .hero-grid{width:92%;grid-template-columns:1fr;gap:42px;padding-top:25px}
+ .hero-content{padding-top:0}
+ h1{font-size:clamp(48px,14vw,72px)}
+ .hero p{font-size:16px}
+ .hero-panel{max-width:440px;width:100%;justify-self:center}
+ .hero-panel-image{height:390px;border-radius:12px 12px 150px 150px}
+ .hero-panel-info{margin:-45px 18px 0}
+ .hero-note{position:static;margin:35px 4% 0;font-size:10px}
+ .section{padding:72px 0}
+ .intro,.visit{grid-template-columns:1fr}
+ .intro-img{height:430px}
+ .service-grid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}
+ .g1{grid-row:span 2}.g5{grid-column:span 2}
+ .gallery-head{display:block}.gallery-head .lead{margin-top:12px}
+ .stats{grid-template-columns:1fr}
+ .visit-card h2{font-size:40px}
+ .map{min-height:360px}
+ .footer-inner{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:520px){
+ .hero{padding-bottom:65px}
+ .buttons{flex-direction:column;align-items:stretch}
+ .btn{width:100%}
+ .hero-panel-image{height:340px;border-radius:10px 10px 115px 115px}
+ .hero-panel-info{margin:-38px 12px 0;padding:17px}
+ h2{font-size:38px}
+ .gallery{grid-template-columns:1fr;grid-template-rows:260px 220px 220px 220px 220px}
+ .g1,.g5{grid-column:auto;grid-row:auto}
+ .visit-card{padding:30px 24px}
+}
+</style>
+</head>
+<body>
+<div class="topbar">Rajendra Nagar • Hyderabad &nbsp; | &nbsp; Appointments by phone & WhatsApp</div>
+
+<nav><div class="container nav-inner">
+  <a class="logo" href="#">Jawed Habib<span>Hair & Beauty</span></a>
+  <div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></div>
+  <a class="nav-cta" href="#visit">Book Appointment</a><button class="mobile-menu" onclick="document.querySelector('.navlinks').style.display='flex'">Menu</button>
+</div></nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="eyebrow">Hair • Beauty • Confidence</div>
+      <h1>Your look.<br>Perfected.</h1>
+      <p>A premium salon experience in Rajendra Nagar, Hyderabad — crafted around great hair, thoughtful beauty services and a welcoming atmosphere.</p>
+      <div class="buttons"><a class="btn btn-gold" href="#visit">Book an Appointment →</a><a class="btn btn-light" href="#services">Explore Services</a></div>
+    </div>
+    <div class="hero-panel">
+      <div class="hero-panel-image"></div>
+      <div class="hero-panel-info">
+        <span>JAWED HABIB</span>
+        <strong>Hair & Beauty</strong>
+        <small>Rajendra Nagar • Hyderabad</small>
+      </div>
+    </div>
+  </div>
+  <div class="hero-note">Website concept • Designed for demonstration</div>
+</header>
+
+<section class="section" id="about"><div class="container intro">
+  <div>
+    <div class="section-label">The experience</div>
+    <h2>Walk in. Feel good. Walk out transformed.</h2>
+    <p class="lead">A modern digital home for the salon — designed to make it easy for new customers to discover the brand, explore services and get in touch before visiting.</p>
+    <div class="stats"><div class="stat"><strong>Expert</strong><span>Hair & beauty care</span></div><div class="stat"><strong>Personal</strong><span>Consultation-led service</span></div><div class="stat"><strong>Local</strong><span>Rajendra Nagar, Hyderabad</span></div></div>
+  </div>
+  <div class="intro-img"></div>
+</div></section>
+
+<section class="section services" id="services"><div class="container">
+  <div class="section-label">What we offer</div><h2>Signature services</h2>
+  <p class="lead">A clean, premium service showcase. Exact prices and branch-specific offers can be added after confirmation with the salon.</p>
+  <div class="service-grid">
+    <article class="card"><span class="num">01 / HAIR</span><h3>Haircuts & Styling</h3><p>Personalised cuts, styling and finishing tailored to your face shape and preferred look.</p></article>
+    <article class="card"><span class="num">02 / TREATMENTS</span><h3>Hair Care</h3><p>Hair spa and care treatments designed to refresh, nourish and maintain healthy-looking hair.</p></article>
+    <article class="card"><span class="num">03 / BEAUTY</span><h3>Beauty Services</h3><p>Beauty and grooming services for a polished look, whether it is everyday care or a special occasion.</p></article>
+    <article class="card"><span class="num">04 / COLOUR</span><h3>Hair Colour</h3><p>Colour consultation and styling for subtle refreshes or a more noticeable transformation.</p></article>
+    <article class="card"><span class="num">05 / GROOMING</span><h3>Men's Grooming</h3><p>Sharp, comfortable grooming with styling recommendations suited to your look.</p></article>
+    <article class="card"><span class="num">06 / OCCASIONS</span><h3>Special Looks</h3><p>Get ready for celebrations and important moments with a complete beauty and styling experience.</p></article>
+  </div>
+</div></section>
+
+<section class="section" id="gallery"><div class="container">
+  <div class="gallery-head"><div><div class="section-label">Inside the look</div><h2>Style in every detail.</h2></div><p class="lead">Replace these demo images with the salon's real interior, team and transformation photos before launch.</p></div>
+  <div class="gallery"><div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div><div class="g5"></div></div>
+</div></section>
+
+<section class="quote"><p>“Great hair is not just a style. It is the confidence you carry with it.”</p><small>— A modern salon experience, made personal.</small></section>
+
+<section class="section" id="visit"><div class="container visit">
+  <div class="visit-card"><div class="section-label">Come say hello</div><h2>Let's make your next look happen.</h2>
+    <div class="details">
+      <div class="detail"><strong>Location</strong>Rajendra Nagar, Hyderabad, Telangana</div>
+      <div class="detail"><strong>Hours</strong>09:00 AM — 09:00 PM</div>
+      <div class="detail"><strong>Appointments</strong>Call or WhatsApp the salon to confirm availability.</div>
+    </div>
+    <div class="buttons"><a class="btn btn-gold" href="tel:+914065458458">Call Salon</a><a class="btn" style="border:1px solid #d9cabc" href="https://maps.google.com/?q=Jawed+Habib+Hair+and+Beauty+Rajendra+Nagar+Hyderabad" target="_blank">Get Directions</a></div>
+  </div>
+  <div class="map"><div class="map-inner"><div class="pin">⌖</div><h3>Jawed Habib Hair & Beauty</h3><p>Rajendra Nagar • Hyderabad</p><a class="btn btn-gold" href="https://maps.google.com/?q=Jawed+Habib+Hair+and+Beauty+Rajendra+Nagar+Hyderabad" target="_blank">Open in Google Maps →</a></div></div>
+</div></section>
+
+<footer><div class="container footer-inner"><div><div class="footer-logo">Jawed Habib</div><small>Hair & Beauty • Rajendra Nagar</small></div><small>© 2026 Website Concept</small></div></footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{
+  if(window.innerWidth<=800) document.querySelector('.navlinks').style.removeProperty('display');
+}));
+</script>
+</body>
+</html>
